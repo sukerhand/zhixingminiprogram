@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "s-card": "/components/content-card/index",
+    "l-list": "/miniprogram_npm/lin-ui/list/index"
+  }
+}

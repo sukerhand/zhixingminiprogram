@@ -1,0 +1,14 @@
+<!--miniprogram/pages/present/present.wxml-->
+<view>
+<image src="../../images/titleB.png" class="present-img"/>
+    <view>
+        <l-segment placement="top" item-height="60" active-color="#0000FF" bind:linchange="changeTabs">
+            <l-segment-item tab="小学样书" key="ss1"/>
+            <l-segment-item tab="中学样书" key="ss2"/>
+            <l-segment-item tab="高中样书" key="ss3"/>
+            <l-segment-item tab="其他样书" key="ss4"/>
+
+        </l-segment>
+    </view>
+
+</view>

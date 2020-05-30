@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "l-input":"/miniprogram_npm/lin-ui/input/index",
+    "l-image-picker":"/miniprogram_npm/lin-ui/image-picker/index",
+    "l-button":"/miniprogram_npm/lin-ui/button/index",
+    "l-form":"/miniprogram_npm/lin-ui/form/index",
+    "l-form-item":"/miniprogram_npm/lin-ui/form-item/index",
+    "l-toast": "/miniprogram_npm/lin-ui/toast/index",
+    "l-message": "/miniprogram_npm/lin-ui/message/index"
+
+
+  }
+}

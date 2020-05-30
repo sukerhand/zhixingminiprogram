@@ -1,0 +1,77 @@
+/* miniprogram/pages/my/my.wxss */
+.container{
+    display: flex;
+    flex-direction: column;
+   
+}
+.head-container {
+    width: 100%;
+    height: 266rpx;
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(#e8e9e8, rgba(240, 238, 238, 0.967));
+  }
+  
+  .header-img {
+    width: 130rpx;
+    height: 130rpx;
+    margin: 22rpx 0 0 26rpx;
+  }
+  
+  .header-img image {
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 50%;
+  }
+  
+  .head-title {
+    margin: 0rpx 0 0 50rpx;
+  }
+  
+  .header-name {
+    font-size: 38rpx;
+    font-weight: 400;
+    color: rgb(41, 8, 230);
+    line-height: 45rpx;
+    text-align: left;
+  }
+  
+.myinfo{
+    width:100%;
+    
+}
+.mycontainer {
+    width: 100%;
+    height: 250rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+}
+
+.in-con {
+    width: 730rpx;
+    /*height: 140rpx;*/
+    /*border: 1px dashed #bcebfe;*/
+
+}
+
+.grid-item {
+
+    width: 160rpx;
+    height: 160rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.img {
+    height: 64rpx;
+    width: 64rpx;
+}
+.text{
+    margin-top:6rpx;
+    font-size: 26rpx;
+    color: blue;
+}

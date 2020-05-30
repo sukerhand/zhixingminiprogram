@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view>
+	<view class="container">
+		<swiper class="top-img" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+			<block wx:for="{{imgBanner}}" wx:key="index">
+				<swiper-item>
+					<image src="{{item}}" class="top-img" />
+				</swiper-item>
+			</block>
+		</swiper>
+
+		<s-category-grid grid="{{topThemes}}"></s-category-grid>
+
+		<view wx:for="{{bookList}}" wx:key="index" class="books-container">
+			<s-book data="{{item}}"> </s-book>
+		</view>
+	</view>
+</view>

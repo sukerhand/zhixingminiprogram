@@ -1,0 +1,68 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view>
+
+<view class="container">
+<view class="swiper">
+     
+      <swiper class="swiper1" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{detailList}}" wx:key="*this">
+          <swiper-item>
+            <image bindtap="chooseImg" mode="aspectFill" class="swiper-item" id="{{index}}" wx:if="{{item}}" src="{{imgBookurl+item}}"> </image>
+          </swiper-item>
+        </block>
+      </swiper>
+   
+ 
+ </view>
+    <view class="head">
+        <text class='title'>{{book.book_name}}</text>
+       
+    </view>
+    <view class="sub-container">
+        <text class="headline">分类信息</text>
+        <text class='title-edition'>版本:{{book.edition}}</text>
+        <view class="taglist">
+        <block wx:for="{{seleClass}}" wx:key="index">
+        <view class="tags">
+        <l-tag plain="{{true}}" size="large"  select="{{item.sel}}" name="{{item.class}} "id="{{index}}" bind:lintap="onSelect">{{item.class}}</l-tag>
+        </view>
+        </block>
+          </view>
+         
+    </view>
+    <view class="sub-container">
+        <text class="headline">产品简介</text>
+       
+        <text>{{book.description}}</text>
+    </view>
+    <view class="sub-container">
+        <text class="headline">出版信息</text>
+        <view class="detail-container">
+            <view class="vertical description">
+                <text>出版社</text>
+                <text>年份：</text>
+                <text>作者：</text>
+                <text>价格：</text>
+            </view>
+            <view class="vertical">
+                <text>{{book.publish}}</text>
+                <text>{{book.year}}</text>
+                <text>{{book.author}}</text>
+                <l-price unit="￥" value="{{thisPrice}}" value-color="#ad0e11" unit-color="#ad0e11" value-size="28"></l-price>
+                
+            </view>
+        </view>
+    </view>
+    <view class="bottomitem">
+<l-button open-type="contact" session-from="{{book.book_name}}" shape="circle">联系客服</l-button>
+<l-button disabled="{{book.stylebook?false:true}}" bind:lintap="showMessage" shape="circle">样书申请</l-button>
+
+</view>
+
+</view>
+
+
+
+
+</view>

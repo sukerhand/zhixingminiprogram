@@ -1,0 +1,36 @@
+<!--pages/teacherlogin/teacherlongin.wxml-->
+
+ 
+ <l-form name="login" bind:linsubmit="submit" l-form-btn-class="l-form-btn-class" trgger:blur>
+    <l-form-item label="姓  名:" name="name" rules="{{userRules}}" >
+        <l-input id="name"  placeholder="请输入姓名"  value="{{login.name}}" rules="{{userRules}}" hide-label tip-type="message" clear="{{true}}" l-error-text="error-text" />
+    </l-form-item>
+    <l-form-item label="邮  箱:" name="email" rules="{{emailRules}}" >
+        <l-input id="email" placeholder="请输入电子邮箱" value="{{login.email}}" hide-label show-row="{{false}}" tipType="toast"/>
+    </l-form-item>
+    <l-form-item label="联系电话:" name="phone" rules="{{phoneRules}}" >
+        <l-input id="phone" placeholder="请输入联系电话" value="{{login.phone}}" hide-label show-row="{{false}}" tipType="text"/>
+    </l-form-item>
+    <l-form-item label="任教学校:" name="school" rules="{{otherRules}}" >
+        <l-input id="school" placeholder="请输入学校名称" value="{{login.school}}" hide-label show-row="{{false}}" tipType="text" />
+    </l-form-item>
+    <l-form-item label="教导年级:" name="grade" rules="{{otherRules}}" >
+        <l-input id="grade" placeholder="请输入任教年级" value="{{login.grade}}" hide-label show-row="{{false}}" tipType="text" />
+    </l-form-item>
+    <l-form-item label="教导科目:" name="class" rules="{{otherRules}}" >
+        <l-input id="class" placeholder="请输入任教科目" value="{{login.class}}" hide-label show-row="{{false}}" tipType="text" />
+    </l-form-item>
+   
+    <view slot="submit">
+        <l-button>注册</l-button>
+    </view>
+    <view slot="reset">
+        <l-button type="default" plain>重置</l-button>
+    </view>
+</l-form>
+
+ <!-- <text class="textline">温馨提示:请等待上传照片完整显示再点击提交!</text>
+<l-image-picker count="1" bind:linchange="onChangeTap" /> -->
+
+<l-toast/>
+<l-message/>

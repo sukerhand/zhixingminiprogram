@@ -1,0 +1,31 @@
+<!--miniprogram/pages/contents/contents.wxml-->
+<view class="container">
+	<view class="top-menu">
+		<l-segment active-key="{{currentpage}}" bind:linchange="changeTops">
+			<l-segment-item tab="小学" key="P" />
+			<l-segment-item tab="初中" key="M" />
+			<l-segment-item tab="高中" key="H" />
+			<l-segment-item tab="其它" key="Other" />
+		</l-segment>
+	</view>
+	<view class="container-m">
+		<view class="left-menu">
+			<l-segment placement="left" item-height="90" active-color="#0000FF" bind:linchange="changeTabs">
+				<block wx:if="{{true}}" wx:for="{{menuList}}" wx:key="index" >
+                <l-segment-item tab="{{item}}" key="{{index}}" />
+                </block>
+			</l-segment>
+		</view>
+		<view class="con4">
+			<view class="con5"></view>
+
+			<view class="con3">
+				<view wx:for="{{bookList}}" wx:key="index" class="books-container">
+					<s-book data="{{item}}"> </s-book>
+				</view>
+
+			</view>
+		</view>
+	</view>
+
+</view>

@@ -1,0 +1,12 @@
+<!--components/book/index.wxml-->
+<wxs src="../../miniprogram_npm/lin-ui/filter/string.wxs" module="string"/>
+
+ 
+	<l-card bind:tap="onTap" type="primary" image="{{imgBookurl+data.img}}" title="{{data.book_name}}" bid="{{data._id}}">
+		<view class="content">
+			<view>
+				<l-price unit="￥" value="{{data.price}}" value-color="#ad0e11" unit-color="#ad0e11" value-size="28"></l-price>
+			</view>
+			{{string.substring(data.description[0],0,25)}}...
+		</view>
+	</l-card>

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/contents/contents",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/teacherlogin/teacherlongin",
+    "pages/aboutus/aboutus"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F5F5F5",
+    "navigationBarTitleText": "智行图书",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#1296db",
+    "custom": false,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/indexHL.png"
+      },
+      {
+        "pagePath": "pages/contents/contents",
+        "text": "书目",
+        "iconPath": "/images/content.png",
+        "selectedIconPath": "/images/contentHL.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/myHL.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "l-grid": "/miniprogram_npm/lin-ui/grid/index",
+    "l-grid-item": "/miniprogram_npm/lin-ui/grid-item/index",
+    "l-segment": "/miniprogram_npm/lin-ui/segment/index",
+    "l-segment-item": "/miniprogram_npm/lin-ui/segment-item/index",
+    "s-book": "/components/book/index"
+  }
+}

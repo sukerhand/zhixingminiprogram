@@ -1,0 +1,21 @@
+<!--miniprogram/pages/aboutus/aboutus.wxml-->
+<view class="container">
+	<image class="image" src="cloud://zhixing-book.7a68-zhixing-book-1302219995/banner/top1.jpg"></image>
+	<s-card class="content" name="联系我们">
+  <view class="text">
+  <l-list title="联系电话(微信同号):17736605982  " />
+    <l-list title="固定电话:0771-2857469" /> 
+      <l-list title="邮箱(QQ)：3050216023 " />
+      <l-list title="地址:南宁市西乡塘区华西路38号大和平商业城4号楼" desc="2层235、244、248号铺面" />
+      <l-list title="客服中心" desc="营业时间：9:00-17:30" />
+	
+    </view>
+	</s-card>
+	<view>
+		<s-card name="公司简介">
+   <text class="text">智行图书是韬智书店旗下的一家专业从事教辅图书批发的专业直营书店。本店以诚信经营为本，以客户满意为努力方向。竭诚为广大顾客服务。</text>
+
+		</s-card>
+	</view>
+
+</view>

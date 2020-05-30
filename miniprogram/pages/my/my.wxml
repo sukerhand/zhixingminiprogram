@@ -1,0 +1,25 @@
+<!--miniprogram/pages/my/my.wxml-->
+<view class="container">
+	<view class='head-container'>
+    <view class='header-img'>
+      <image src="{{userInfo.length!=0?userInfo.avatarUrl:defaultImg}}"></image>
+    </view>
+    <img-btn-comp open-type="getUserInfo" bind:getuserinfo="getuserinfo">
+      <view class='head-title' slot="info">
+        <view class='header-name'>
+          <text>{{userInfo.length!=0?userInfo.nickName:'点击登录'}}</text>
+        </view>
+      </view>
+    </img-btn-comp>
+  </view>
+
+	<!-- <view class="mycontainer">
+		
+	</view> -->
+	<view>
+<content-card name="我的">
+      <l-list title="教师注册" bindtap="tapone" />
+      <l-list title="关于我们" url="../aboutus/aboutus"/>
+    </content-card>
+	</view>
+</view>

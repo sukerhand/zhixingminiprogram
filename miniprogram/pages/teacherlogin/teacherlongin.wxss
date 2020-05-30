@@ -1,0 +1,29 @@
+/* pages/teacherlogin/teacherlongin.wxss */
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.l-form-btn-class{
+  display: flex;
+ 
+  justify-content: space-around;
+  margin-top: 10rpx;
+}
+.buttun-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+.textline{
+font-size: small;
+font-weight: 400;
+height: 80rpx;
+}
+.button{
+   padding-top: 30rpx;
+}
